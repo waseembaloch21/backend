@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- form submision from frontend to backend -->
+   <h1>Get and Post Request</h1>
+
+   <h2>Get Request</h2>
+   <form action="http://localhost:5000/tacos" method="get">
+    <label for="">meat</label>
+    <input type="text" name="meat">
+    <label for="">Quantity</label>
+    <input type="number" name="qty">
+    <button type="submit">submit</button>
+   </form>
+
+    <h2>Post Request</h2>
+    <form action="http://localhost:5000/tacos" method="post">
+     <label for="">meat</label>
+     <input type="text" name="meat">
+     <label for="">Quantity</label>
+     <input type="number" name="qty">
+     <button type="submit">submit</button>
+   </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  
+  "users": [
+    {
+      "id": 1,
+      "names": "saif",
+      "email": "saif@example.com",
+      "age": 29,
+      "role": "admin",
+      "posts": [
+        {
+          "id": 1,
+          "title": "Introduction to JSON",
+          "content": "JSON stands for JavaScript Object Notation...",
+          "date": "2024-11-10"
+        },
+        {
+          "id": 2,
+          "title": "Advanced JSON Parsing",
+          "content": "Learn how to parse JSON efficiently...",
+          "date": "2024-11-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "names": "adnan",
+      "email": "adnan@example.com",
+      "age": 34,
+      "role": "editor",
+      "posts": [
+        {
+          "id": 1,
+          "title": "Understanding REST APIs",
+          "content": "REST APIs are essential for modern web development...",
+          "date": "2024-10-21"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "names": "waseem",
+      "email":"waseem@example.com",
+      "age": 25,
+      "role": "user",
+      "posts": [
+        {
+          "id": 1,
+          "title": "Getting Started with JavaScript",
+          "content": "JavaScript is a versatile language used for both client and server-side...",
+          "date": "2024-09-15"
+        },
+        {
+          "id": 2,
+          "title": "HTML Basics",
+          "content": "HTML is the foundation of web development...",
+          "date": "2024-09-20"
+        }
+      ]
+    }
+  ]
+}

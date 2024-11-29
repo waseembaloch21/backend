@@ -1,0 +1,11 @@
+<%- include('partial/head') %>
+
+<body>
+    <%- include('partial/navbar') %>
+    <h1>ALL COLORS</h1>
+    <ul><% for (const cat of cats) {%>
+        <li><%= cat %></li>
+        <% } %></ul>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<%- include('partial/head') %>
+<body>
+  <%- include('partial/navbar') %>
+  <h1>Profile page : <%= names %></h1>
+  <h2>Email: <%= email %></h2>
+      <hr>
+    
+        <% for (const post of posts ) {  %>
+       <h2><%= post.title %> - <strong><%= post.date %></strong></h2>
+       <h3>my content: <%= post.content %></h3>
+       <% } %> 
+
+
+   
+  
+       
+</body>
+</html>

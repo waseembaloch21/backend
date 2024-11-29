@@ -1,0 +1,19 @@
+<%- include('partial/head') %>
+
+<body>
+    <%- include('partial/navbar') %>
+    <h1 class="h1">Your Number is: <%= num  %></h1>
+
+   <%  if(num %2 === 0){ %>
+        <h2>This is an even number</h2>
+   <%  }else {  %>
+    <h2>This is an odd number</h2>
+   <% } %>
+
+   <h3>Your number is: <%= num %2 === 0 ? "even" : "odd"   %></h3>
+   <a href="/"><button style="padding: 1%; background-color: black; color: whitesmoke;">CLICK ME </button></a>
+
+    
+
+</body>
+</html>
