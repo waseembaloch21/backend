@@ -5,7 +5,6 @@ const raditdata = require('./data.json')
 const methodOverride = require('method-override')
 const { v4: uuid } = require('uuid');
 
-
 app.listen(5000, () => {
     console.log(`app is listning on 5000`);
 })
@@ -13,8 +12,9 @@ app.listen(5000, () => {
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 app.get("/", (req, res) => {
     res.render('home')
@@ -55,7 +55,21 @@ let comments = [
 
   })
 
-  app.patch('/comments/:id')
+  app.patch('/comments/:id', (req,res) => {
+    const {id} = req.params;
+    const newComment = req.body.comment
+    const foundComment = comments.find(c => c.id === id)
+    foundComment.comment = newComment
+    res.redirect('/comments')
+  })
+
+  app.delete('/comments/:id', (req,res) => {
+    const {id} = req.params;
+    comments = comments.filter(c => c.id !== id)
+    res.redirect('/comments')
+  })
+
+
 
 
 
